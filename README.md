@@ -53,7 +53,7 @@ To find all installed flatpaks:
 
 `flatpak list`
 
-To find runtime used by app:
+To find runtime used by the app:
 
 `flatpak info <full app name>`
 
