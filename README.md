@@ -2,9 +2,13 @@
 
 GTK3 CSS stylesheet that apply MacOS style buttons over current GTK theme without changing it. Tested with `elementary OS` but should work with any GTK3 desktop.
 
-![Screenshot from 2021-09-21 23-58-10](https://user-images.githubusercontent.com/33252703/134327539-3c11e6c9-8742-4c36-975c-ab67ccb4b481.png)
+**Night**
 
-![Screenshot from 2021-09-21 23-57-49](https://user-images.githubusercontent.com/33252703/134327558-488f40d6-d762-4816-ad91-0d809a2e10bb.png)
+![Screenshot from 2021-11-04 17-29-06](https://user-images.githubusercontent.com/33252703/140357660-7d8ab14a-64b7-48f2-b992-a52bd212edc7.png)
+
+**Day**
+
+![Screenshot from 2021-11-04 17-29-21](https://user-images.githubusercontent.com/33252703/140357154-6738511d-8e98-4ec6-b1ae-edc6b5f58435.png)
 
 
 ### Pre-requisites
@@ -24,7 +28,13 @@ cp -r /tmp/macos-titlebar/* ~/.config/gtk-3.0
 
 ## Install theme for flatpak apps
 
-Use [pakitheme](https://github.com/refi64/pakitheme) bash script to install current theme as flatpak. I recommend installing for both `user` and `system`. 
+Run this command to override `xdg-config` and have buttons themed for flatpak apps:
+
+```bash
+flatpak override --user --filesystem=xdg-config/gtk-3.0:ro
+```
+
+To have elementary theme for flatpak apps you have to install current theme as flatpak. To do that use [pakitheme](https://github.com/refi64/pakitheme) bash script.
 
 ```bash
 sudo apt install ostree
@@ -36,15 +46,21 @@ chmod 775 pakitheme
 ./pakitheme install-user
 ```
 
-And run this command to override `xdg-config`:
-
-```bash
-flatpak override --user --filesystem=xdg-config/gtk-3.0:ro
-```
-
 There still might be some apps that will ignore it, but majority will work fine.
 
 Logout or reboot to apply changes.
+
+## To uninstall
+
+```bash
+rm -r ~/.config/gtk-3.0
+mv ~/.config/gtk-3.0.bkp ~/.config/gtk-3.0
+```
+
+To remove flatpak themes:
+```bash
+flatpak uninstall <full theme name>
+```
 
 ### Side note regarding flatpak theming
 If you have a custom theme then you will also have to copy it to runtime folder of that particular app. To have consistent themes accross all apps this has to be done for each runtime, for example, QT, elementary, Gnome 3.38, Gnome 40, KDE etc.
@@ -60,15 +76,3 @@ To find runtime used by the app:
 Example of flatpak themes folder location:
 
 `/var/lib/flatpak/runtime/io.elementary.Platform/x86_64/6/active/files/share/themes`
-
-## To uninstall
-
-```bash
-rm -r ~/.config/gtk-3.0
-mv ~/.config/gtk-3.0.bkp ~/.config/gtk-3.0
-```
-
-To remove flatpak themes:
-```bash
-flatpak uninstall <full theme name>
-```
