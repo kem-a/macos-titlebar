@@ -4,11 +4,13 @@ GTK3 CSS stylesheet that apply MacOS style buttons over current GTK theme withou
 
 **Night**
 
-![Screenshot from 2021-11-04 17-29-06](https://user-images.githubusercontent.com/33252703/140357660-7d8ab14a-64b7-48f2-b992-a52bd212edc7.png)
+![Screenshot from 2021-11-04 17-29-06](https://user-images.githubusercontent.com/33252703/140376423-eb1c0f8a-de50-45eb-bd75-101bf5013b2d.png)
+
 
 **Day**
 
-![Screenshot from 2021-11-04 17-29-21](https://user-images.githubusercontent.com/33252703/140357154-6738511d-8e98-4ec6-b1ae-edc6b5f58435.png)
+
+![Screenshot from 2021-11-04 17-29-21](https://user-images.githubusercontent.com/33252703/140376484-09f15c2c-98e6-4368-a1ef-d44f3cfb8ab3.png)
 
 
 ### Pre-requisites
