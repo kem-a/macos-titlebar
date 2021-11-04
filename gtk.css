@@ -64,8 +64,9 @@ headerbar.titlebar.windowhandle
 	margin-bottom: 5px;
 	margin-top: 2px;
 }
-/* elementary epiphany fix */
-.background.csd > stack.titlebar > headerbar.titlebar > deck > headerbar
+/* elementary epiphany, gnome builder fix */
+.background.csd > stack.titlebar > headerbar.titlebar > deck > headerbar,
+.background.csd.org-gnome-Builder.workspace > stack.titlebar > headerbar
 {
 	padding: 0px;
 }
