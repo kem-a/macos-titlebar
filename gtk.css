@@ -74,6 +74,12 @@ headerbar.titlebar.windowhandle
 {
 	margin-bottom: 5px;
 }
+/* AppCenter fix */
+.background.csd.unified > deck > grid.vertical > headerbar
+{
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
 
 /*(((((((((( Titlebuttons ))))))))))
 */
