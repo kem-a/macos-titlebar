@@ -1,155 +1,229 @@
-/* shrink headerbars (don't forget semicolons after each property) */
-headerbar {
-    min-height: 28px;
-    padding-left: 2px; /* same as childrens vertical margins for nicer proportions */
-    padding-right: 2px;
-    /* background-color: #2d2d2d; */
+/*(((((((((( Custom theme GTK3 ))))))))))
+*/
+
+/*(((((((((( headerbar and titlebar ))))))))))
+*/
+headerbar
+{ 
+      padding: 18px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+}
+.titlebar
+{
+         padding: 16px;
+     padding-top: 4px;
+  padding-bottom: 4px;
+  min-height: 18px;
+  border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   /*border-color: transparent;*/
 }
 
-headerbar entry,
-headerbar spinbutton,
-headerbar button,
-headerbar separator {
-    margin-top: 0px; /* same as headerbar side padding for nicer proportions */
-    margin-bottom: 0px;
+/*(((((((((( window rounded bottom corners ))))))))))
+*/
+/* gnome-settings, seahorse app */
+.background.csd, decoration, stack.background, widget.view
+{
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-bottom: 5px;
+}
+/* gnome-disks left pane */
+.background.csd > box.vertical > paned.horizontal > scrolledwindow
+{
+	padding-bottom: 5px;
+}
+/* gnome-disks titlebar correction */
+.background.csd > paned.titlebar.horizontal
+{
+	padding: 0px;
+}
+/* gnome-disks separator glitch */
+.background.csd > paned.titlebar.horizontal > separator
+{
+	margin-left: 0px;
+}
+/* gnome-logs, gnome-settings */
+.background.csd > box.vertical > box.horizontal > box.vertical > scrolledwindow,
+.background.csd > box.vertical > box.horizontal > list,
+.background.csd > box.horizontal > box.vertical > scrolledwindow.view
+{
+	margin-bottom: 5px;
+}
+/* seahorse preference window */
+headerbar.titlebar.windowhandle
+{
+	min-height: 18px;
+}
+/* seahorse left list pane */
+.background.csd > leaflet.unfolded > scrolledwindow > viewport.frame
+{
+	margin-bottom: 5px;
+	margin-top: 2px;
 }
 
-/* shrink ssd titlebars */
-.default-decoration {
-    min-height: 28px; /* let the entry and button drive the titlebar size. Not really, its better to have some space */
-    padding: 0px;
-    /* background-color: #2d2d2d;*/
+/*(((((((((( Titlebuttons ))))))))))
+*/
+window button.titlebutton
+{
+  padding-left: 0px;
+}
+button.titlebutton
+{
+  padding: 0px;
+  min-width: 0px;
 }
 
-.default-decoration .titlebutton {
-    min-height: 0px; /* tweak these two props to reduce button size */
-    min-width: 0px;
-}
-
-window.ssd headerbar.titlebar {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    min-height: 28px;
-}
-
-window.ssd headerbar.titlebar button.titlebutton {
-    padding-top: 3px;
-    padding-bottom:3px;
-    min-height: 0;
-}
-
-/* adding custom buttons */
 headerbar button.titlebutton,
-.titlebar button.titlebutton {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    background-color: rgba(231, 232, 235, 0);
+.titlebar button.titlebutton
+{
+           padding: 0px;
+        /*margin-top: 4px;*/
+     /*margin-bottom: 4px;*/
+        min-height: 18px;
+         min-width: 18px;
+        box-shadow: none;
+      border-color: transparent;
+  background-color: transparent;
+  background-image: none;
 }
-
 headerbar button.titlebutton:hover,
-.titlebar button.titlebutton:hover {
-    color: rgba(82, 93, 118, 0.8);
-    border-color: rgba(82, 93, 118, 0.1);
-    background-color: rgba(251, 251, 252, 0.9);
-}
-
 headerbar button.titlebutton:active,
 headerbar button.titlebutton:checked,
+.titlebar button.titlebutton:hover,
 .titlebar button.titlebutton:active,
-.titlebar button.titlebutton:checked {
-    color: #ffffff;
-    border-color: #5294e2;
-    background-color: #5294e2;
+.titlebar button.titlebutton:checked
+{
+             color: transparent;
+      border-color: transparent;
+  background-color: transparent;
 }
-
-/* Fixed/removed stupid :active border and box
-   shadow that applied because of button css*/
-headerbar button.titlebutton.close:active,
-headerbar button.titlebutton.maximize:active,
-headerbar button.titlebutton.minimize:active{
-    border-color: transparent;
-    box-shadow: none;
-}
-
+headerbar button.titlebutton.restore,
 headerbar button.titlebutton.close,
 headerbar button.titlebutton.maximize,
 headerbar button.titlebutton.minimize,
+.titlebar button.titlebutton.restore,
 .titlebar button.titlebutton.close,
 .titlebar button.titlebutton.maximize,
-.titlebar button.titlebutton.minimize {
-    color: transparent;
-    background-color: transparent;
-    background-position: center;
+.titlebar button.titlebutton.minimize
+{
+                color: transparent;
+     background-color: transparent;
+  background-position: center;
     background-repeat: no-repeat;
-    border-width: 0;
+         border-width: 0px;
+         border-color: transparent;
 }
-
-headerbar button.titlebutton.close:backdrop,
-headerbar button.titlebutton.maximize:backdrop,
-headerbar button.titlebutton.minimize:backdrop,
+headerbar button.titlebutton.close:backdrop, 
+headerbar button.titlebutton.maximize:backdrop, 
+headerbar button.titlebutton.minimize:backdrop, 
+headerbar button.titlebutton.restore:backdrop,
 .titlebar button.titlebutton.close:backdrop,
 .titlebar button.titlebutton.maximize:backdrop,
-.titlebar button.titlebutton.minimize:backdrop {
-    opacity: 0.75; /* Changed opacity to make it less poppy for inactive windows*/
+.titlebar button.titlebutton.minimize:backdrop,
+.titlebar button.titlebutton.restore:backdrop {
+  opacity: 0.25;
 }
 
 headerbar button.titlebutton.close,
 .titlebar button.titlebutton.close {
-    background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2.png"));
 }
 
 headerbar button.titlebutton.close:backdrop,
 .titlebar button.titlebutton.close:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop.png"), url("assets/titlebutton-close-backdrop@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop.png"), url("assets/titlebutton-close-backdrop@2.png"));
+}
+
+headerbar button.titlebutton.close:backdrop:hover,
+.titlebar button.titlebutton.close:backdrop:hover {
+  background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop-hover.png"), url("assets/titlebutton-close-backdrop-hover@2.png"));
 }
 
 headerbar button.titlebutton.close:hover,
 .titlebar button.titlebutton.close:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-hover.png"), url("assets/titlebutton-close-hover@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-close-hover.png"), url("assets/titlebutton-close-hover@2.png"));
 }
 
 headerbar button.titlebutton.close:active,
 .titlebar button.titlebutton.close:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-active.png"), url("assets/titlebutton-close-active@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-close-active.png"), url("assets/titlebutton-close-active@2.png"));
 }
 
 headerbar button.titlebutton.maximize,
 .titlebar button.titlebutton.maximize {
-    background-image: -gtk-scaled(url("assets/titlebutton-maximize.png"), url("assets/titlebutton-maximize@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize.png"), url("assets/titlebutton-maximize@2.png"));
 }
 
 headerbar button.titlebutton.maximize:backdrop,
 .titlebar button.titlebutton.maximize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-maximize-backdrop.png"), url("assets/titlebutton-maximize-backdrop@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-backdrop.png"), url("assets/titlebutton-maximize-backdrop@2.png"));
+}
+
+headerbar button.titlebutton.maximize:backdrop:hover,
+.titlebar button.titlebutton.maximize:backdrop:hover {
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-backdrop-hover.png"), url("assets/titlebutton-maximize-backdrop-hover@2.png"));
 }
 
 headerbar button.titlebutton.maximize:hover,
 .titlebar button.titlebutton.maximize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover.png"), url("assets/titlebutton-maximize-hover@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover.png"), url("assets/titlebutton-maximize-hover@2.png"));
 }
 
 headerbar button.titlebutton.maximize:active,
 .titlebar button.titlebutton.maximize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-maximize-active.png"), url("assets/titlebutton-maximize-active@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-active.png"), url("assets/titlebutton-maximize-active@2.png"));
 }
 
 headerbar button.titlebutton.minimize,
 .titlebar button.titlebutton.minimize {
-    background-image: -gtk-scaled(url("assets/titlebutton-minimize.png"), url("assets/titlebutton-minimize@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize.png"), url("assets/titlebutton-minimize@2.png"));
 }
 
 headerbar button.titlebutton.minimize:backdrop,
 .titlebar button.titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-minimize-backdrop.png"), url("assets/titlebutton-minimize-backdrop@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-backdrop.png"), url("assets/titlebutton-minimize-backdrop@2.png"));
+}
+
+headerbar button.titlebutton.minimize:backdrop:hover,
+.titlebar button.titlebutton.minimize:backdrop:hover {
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-backdrop-hover.png"), url("assets/titlebutton-minimize-backdrop-hover@2.png"));
 }
 
 headerbar button.titlebutton.minimize:hover,
 .titlebar button.titlebutton.minimize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover.png"), url("assets/titlebutton-minimize-hover@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover.png"), url("assets/titlebutton-minimize-hover@2.png"));
 }
 
 headerbar button.titlebutton.minimize:active,
 .titlebar button.titlebutton.minimize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"), url("assets/titlebutton-minimize-active@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"), url("assets/titlebutton-minimize-active@2.png"));
+}
+
+headerbar button.titlebutton.restore,
+.titlebar button.titlebutton.restore {
+  background-image: -gtk-scaled(url("assets/titlebutton-restore.png"), url("assets/titlebutton-restore@2.png"));
+}
+
+headerbar button.titlebutton.restore:backdrop,
+.titlebar button.titlebutton.restore:backdrop {
+  background-image: -gtk-scaled(url("assets/titlebutton-restore-backdrop.png"), url("assets/titlebutton-restore-backdrop@2.png"));
+}
+
+headerbar button.titlebutton.restore:backdrop:hover,
+.titlebar button.titlebutton.restore:backdrop:hover {
+  background-image: -gtk-scaled(url("assets/titlebutton-restore-backdrop-hover.png"), url("assets/titlebutton-restore-backdrop-hover@2.png"));
+}
+
+headerbar button.titlebutton.restore:hover,
+.titlebar button.titlebutton.restore:hover {
+  background-image: -gtk-scaled(url("assets/titlebutton-restore-hover.png"), url("assets/titlebutton-restore-hover@2.png"));
+}
+
+headerbar button.titlebutton.restore:active,
+.titlebar button.titlebutton.restore:active {
+  background-image: -gtk-scaled(url("assets/titlebutton-restore-active.png"), url("assets/titlebutton-restore-active@2.png"));
 }
