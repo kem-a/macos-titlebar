@@ -125,7 +125,7 @@ headerbar button.titlebutton.restore:backdrop,
 .titlebar button.titlebutton.maximize:backdrop,
 .titlebar button.titlebutton.minimize:backdrop,
 .titlebar button.titlebutton.restore:backdrop {
-  opacity: 0.25;
+  opacity: 0.75;
 }
 
 headerbar button.titlebutton.close,
