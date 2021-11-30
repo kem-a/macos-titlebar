@@ -5,20 +5,20 @@
 */
 headerbar
 { 
-      padding: 18px;
-      padding-top: 4px;
-      padding-bottom: 4px;
-      border-top-left-radius: 7px;
-      border-top-right-radius: 7px;
+                  padding: 18px;
+              padding-top: 4px;
+           padding-bottom: 4px;
+   border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
-.titlebar
+window.titlebar
 {
-         padding: 16px;
-     padding-top: 4px;
-  padding-bottom: 4px;
-  min-height: 18px;
-  border-top-left-radius: 7px;
-   border-top-right-radius: 7px;
+                 padding: 16px;
+             padding-top: 4px;
+          padding-bottom: 4px;
+              min-height: 18px;
+  border-top-left-radius: 6px;
+ border-top-right-radius: 6px;
    /*border-color: transparent;*/
 }
 
@@ -27,9 +27,9 @@ headerbar
 /* gnome-settings, seahorse app */
 .background.csd, decoration, stack.background, widget.view
 {
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  margin-bottom: 5px;
+   border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+               margin-bottom: 5px;
 }
 /* gnome-disks left pane */
 .background.csd > box.vertical > paned.horizontal > scrolledwindow
@@ -49,7 +49,8 @@ headerbar
 /* gnome-logs, gnome-settings */
 .background.csd > box.vertical > box.horizontal > box.vertical > scrolledwindow,
 .background.csd > box.vertical > box.horizontal > list,
-.background.csd > box.horizontal > box.vertical > scrolledwindow.view
+.background.csd > box.horizontal > box.vertical > scrolledwindow.view,
+.background.csd > stack.view
 {
 	margin-bottom: 5px;
 }
@@ -66,19 +67,24 @@ headerbar.titlebar.windowhandle
 }
 /* elementary epiphany, gnome builder fix */
 .background.csd > stack.titlebar > headerbar.titlebar > deck > headerbar,
-.background.csd.org-gnome-Builder.workspace > stack.titlebar > headerbar
+.background.csd.org-gnome-Builder.workspace > stack.titlebar > headerbar,
+.background.csd > stack.titlebar > stack > headerbar
+/*.background.csd > headerbar.titlebar:not(headerbar)*/
 {
-	padding: 0px;
+	padding: 0 0 0 16px;
 }
-.background.csd > overlay > deck > box.vertical
+.background.csd > overlay > deck > box.vertical,
+.background.csd > overlay > stack
 {
 	margin-bottom: 5px;
 }
-/* AppCenter fix */
-.background.csd.unified > deck > grid.vertical > headerbar
+
+/*(((((((((( Other fixes  ))))))))))))
+*/
+/* geary folder list reduces padding */
+.geary-main-layout treeview.sidebar
 {
-	padding-bottom: 0px;
-	padding-top: 0px;
+	padding: 4px;
 }
 
 /*(((((((((( Titlebuttons ))))))))))
@@ -242,4 +248,109 @@ headerbar button.titlebutton.restore:hover,
 headerbar button.titlebutton.restore:active,
 .titlebar button.titlebutton.restore:active {
   background-image: -gtk-scaled(url("assets/titlebutton-restore-active.png"), url("assets/titlebutton-restore-active@2.png"));
+}
+
+/* EXPERIMENTAL FULL SCREEN CORNERS*/
+.tiled .titlebar:not(headerbar), 
+.tiled-top .titlebar:not(headerbar), 
+.tiled-right .titlebar:not(headerbar), 
+.tiled-bottom .titlebar:not(headerbar), 
+.tiled-left .titlebar:not(headerbar),  
+.maximized .titlebar:not(headerbar), 
+.fullscreen .titlebar:not(headerbar), 
+.tiled headerbar,  
+.tiled-top headerbar, 
+.tiled-right headerbar, 
+.tiled-bottom headerbar,  
+.tiled-left headerbar,  
+.fullscreen headerbar
+{ 
+    border-radius: 0px;
+}
+
+.background .titlebar
+{ 
+   border-top-left-radius: 6px; 
+  border-top-right-radius: 6px;
+}
+.background.tiled .titlebar,
+.background.tiled-top .titlebar, 
+.background.tiled-right .titlebar, 
+.background.tiled-bottom .titlebar,  
+.background.tiled-left .titlebar,  
+.background.maximized .titlebar,  
+.background.solid-csd .titlebar
+{ 
+   border-top-left-radius: 0; 
+  border-top-right-radius: 0;
+}
+window separator:first-child + headerbar, 
+window headerbar:first-child
+{ 
+   border-top-left-radius: 6px;
+}
+window headerbar:last-child
+{ 
+  border-top-right-radius: 6px;
+}
+
+window stack headerbar:first-child,
+window stack headerbar:last-child
+{ 
+  border-top-left-radius: 6px;
+  border-top-right-radius:6px;
+}
+window.tiled headerbar, 
+window.tiled headerbar:first-child, 
+window.tiled headerbar:last-child, 
+window.tiled headerbar:only-child,
+window.tiled-top headerbar, 
+window.tiled-top headerbar:first-child, 
+window.tiled-top headerbar:last-child, 
+window.tiled-top headerbar:only-child, 
+window.tiled-right headerbar,
+window.tiled-right headerbar:first-child,
+window.tiled-right headerbar:last-child,
+window.tiled-right headerbar:only-child, 
+window.tiled-bottom headerbar, 
+window.tiled-bottom headerbar:first-child, 
+window.tiled-bottom headerbar:last-child, 
+window.tiled-bottom headerbar:only-child,
+window.tiled-left headerbar,
+window.tiled-left headerbar:first-child, 
+window.tiled-left headerbar:last-child, 
+window.tiled-left headerbar:only-child, 
+window.maximized headerbar, 
+window.fullscreen headerbar,
+window.fullscreen headerbar:first-child,
+.fullscreen headerbar:last-child, 
+window.fullscreen headerbar:only-child, 
+window.solid-csd headerbar, 
+window.solid-csd headerbar:first-child,
+window.solid-csd headerbar:last-child,
+window.solid-csd headerbar:only-child
+{ 
+  border-radius: 0px;
+}
+
+.background.csd.maximized, .background.csd.tiled, .background.csd.fullscreen,
+headerbar.maximized, headerbar.tiled, headerbar.fullscreen
+{
+   border-radius: 0px;
+  padding-bottom: 0px;
+   margin-bottom: 0px;
+}
+
+window.ssd.maximized separator:first-child + headerbar:backdrop,
+window.ssd.maximized separator:first-child + headerbar,
+window.ssd.maximized headerbar:first-child:backdrop,
+window.ssd.maximized headerbar:first-child,
+window.ssd.maximized headerbar:last-child:backdrop,
+window.ssd.maximized headerbar:last-child,
+window.ssd.maximized stack headerbar:first-child:backdrop,
+window.ssd.maximized stack headerbar:first-child,
+window.ssd.maximized stack headerbar:last-child:backdrop,
+window.ssd.maximized stack headerbar:last-child,
+window.ssd.maximized decoration, window.ssd.maximized headerbar.titlebar {
+  border-radius: 0;
 }
