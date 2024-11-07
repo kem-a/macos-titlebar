@@ -1,0 +1,25 @@
+/* Geary fixes*/
+
+row:selected.activatable.conversation-list  {
+    border-radius: 12px;
+    background-color: #4594fd; /* rgb(50,129,234)*/
+    color: rgb(255,255,255);
+}
+row:hover.activatable.conversation-list  {
+    border-radius: 12px;
+}
+row:selected label {
+    color: rgb(255,255,255);
+}
+row:selected:not(:hover) image {
+    color: #4594fd; /* rgb(50,129,234)*/
+}
+row:selected:hover image {
+    color: rgb(255,255,255);
+}
+label.tertiary.preview {
+    font-size: 10pt;
+}
+window > decoration {
+	border-radius: 12px;
+}
