@@ -42,7 +42,6 @@ To remove flatpak themes:
 ```bash
 flatpak uninstall <full theme name>
 ```
-Delete `~/.config/gtk-3.0` folder, restore backup.
 
 ## License
 
