@@ -19,6 +19,13 @@ GTK3 and GTK4 CSS stylesheet that apply MacOS style buttons over current GTK the
 sh install.sh
 ```
 
+## Customizing Button Styles
+
+To customize the button styles, you can modify the `gtk.css` files located at:
+
+- GTK3: `~/.config/gtk-3.0/gtk.css`
+- GTK4: `~/.config/gtk-4.0/gtk.css`
+
 ## Flatpak theming
 
 Run this command to override `xdg-config` and have buttons themed for flatpak apps:
