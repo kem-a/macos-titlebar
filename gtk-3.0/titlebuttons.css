@@ -88,100 +88,100 @@ headerbar button.titlebutton.restore:backdrop,
 
 headerbar button.titlebutton.close,
 .titlebar button.titlebutton.close {
-  background-image: -gtk-scaled(url("titlebuttons/button-close.svg"), url("titlebuttons/button-close@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-close.svg"), url("titlebuttons/titlebutton-close@2.svg"));
 }
 
 headerbar button.titlebutton.close:backdrop,
 .titlebar button.titlebutton.close:backdrop {
-  background-image: -gtk-scaled(url("titlebuttons/button-close-backdrop.svg"), url("titlebuttons/button-close-backdrop@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-close-backdrop.svg"), url("titlebuttons/titlebutton-close-backdrop@2.svg"));
 }
 
 headerbar button.titlebutton.close:backdrop:hover,
 .titlebar button.titlebutton.close:backdrop:hover {
-  background-image: -gtk-scaled(url("titlebuttons/button-close-backdrop-hover.svg"), url("titlebuttons/button-close-backdrop-hover@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-close-backdrop-hover.svg"), url("titlebuttons/titlebutton-close-backdrop-hover@2.svg"));
 }
 
 headerbar button.titlebutton.close:hover,
 .titlebar button.titlebutton.close:hover {
-  background-image: -gtk-scaled(url("titlebuttons/button-close-hover.svg"), url("titlebuttons/button-close-hover@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-close-hover.svg"), url("titlebuttons/titlebutton-close-hover@2.svg"));
 }
 
 headerbar button.titlebutton.close:active,
 .titlebar button.titlebutton.close:active {
-  background-image: -gtk-scaled(url("titlebuttons/button-close-active.svg"), url("titlebuttons/button-close-active@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-close-active.svg"), url("titlebuttons/titlebutton-close-active@2.svg"));
 }
 
 headerbar button.titlebutton.maximize,
 .titlebar button.titlebutton.maximize {
-  background-image: -gtk-scaled(url("titlebuttons/button-maximize.svg"), url("titlebuttons/button-maximize@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-maximize.svg"), url("titlebuttons/titlebutton-maximize@2.svg"));
 }
 
 headerbar button.titlebutton.maximize:backdrop,
 .titlebar button.titlebutton.maximize:backdrop {
-  background-image: -gtk-scaled(url("titlebuttons/button-maximize-backdrop.svg"), url("titlebuttons/button-maximize-backdrop@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-maximize-backdrop.svg"), url("titlebuttons/titlebutton-maximize-backdrop@2.svg"));
 }
 
 headerbar button.titlebutton.maximize:backdrop:hover,
 .titlebar button.titlebutton.maximize:backdrop:hover {
-  background-image: -gtk-scaled(url("titlebuttons/button-maximize-backdrop-hover.svg"), url("titlebuttons/button-maximize-backdrop-hover@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-maximize-backdrop-hover.svg"), url("titlebuttons/titlebutton-maximize-backdrop-hover@2.svg"));
 }
 
 headerbar button.titlebutton.maximize:hover,
 .titlebar button.titlebutton.maximize:hover {
-  background-image: -gtk-scaled(url("titlebuttons/button-maximize-hover.svg"), url("titlebuttons/button-maximize-hover@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-maximize-hover.svg"), url("titlebuttons/titlebutton-maximize-hover@2.svg"));
 }
 
 headerbar button.titlebutton.maximize:active,
 .titlebar button.titlebutton.maximize:active {
-  background-image: -gtk-scaled(url("titlebuttons/button-maximize-active.svg"), url("titlebuttons/button-maximize-active@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-maximize-active.svg"), url("titlebuttons/titlebutton-maximize-active@2.svg"));
 }
 
 headerbar button.titlebutton.minimize,
 .titlebar button.titlebutton.minimize {
-  background-image: -gtk-scaled(url("titlebuttons/button-minimize.svg"), url("titlebuttons/button-minimize@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-minimize.svg"), url("titlebuttons/titlebutton-minimize@2.svg"));
 }
 
 headerbar button.titlebutton.minimize:backdrop,
 .titlebar button.titlebutton.minimize:backdrop {
-  background-image: -gtk-scaled(url("titlebuttons/button-minimize-backdrop.svg"), url("titlebuttons/button-minimize-backdrop@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-minimize-backdrop.svg"), url("titlebuttons/titlebutton-minimize-backdrop@2.svg"));
 }
 
 headerbar button.titlebutton.minimize:backdrop:hover,
 .titlebar button.titlebutton.minimize:backdrop:hover {
-  background-image: -gtk-scaled(url("titlebuttons/button-minimize-backdrop-hover.svg"), url("titlebuttons/button-minimize-backdrop-hover@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-minimize-backdrop-hover.svg"), url("titlebuttons/titlebutton-minimize-backdrop-hover@2.svg"));
 }
 
 headerbar button.titlebutton.minimize:hover,
 .titlebar button.titlebutton.minimize:hover {
-  background-image: -gtk-scaled(url("titlebuttons/button-minimize-hover.svg"), url("titlebuttons/button-minimize-hover@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-minimize-hover.svg"), url("titlebuttons/titlebutton-minimize-hover@2.svg"));
 }
 
 headerbar button.titlebutton.minimize:active,
 .titlebar button.titlebutton.minimize:active {
-  background-image: -gtk-scaled(url("titlebuttons/button-minimize-active.svg"), url("titlebuttons/button-minimize-active@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-minimize-active.svg"), url("titlebuttons/titlebutton-minimize-active@2.svg"));
 }
 
 headerbar button.titlebutton.restore,
 .titlebar button.titlebutton.restore {
-  background-image: -gtk-scaled(url("titlebuttons/button-restore.svg"), url("titlebuttons/button-restore@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore.svg"), url("titlebuttons/titlebutton-restore@2.svg"));
 }
 
 headerbar button.titlebutton.restore:backdrop,
 .titlebar button.titlebutton.restore:backdrop {
-  background-image: -gtk-scaled(url("titlebuttons/button-restore-backdrop.svg"), url("titlebuttons/button-restore-backdrop@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore-backdrop.svg"), url("titlebuttons/titlebutton-restore-backdrop@2.svg"));
 }
 
 headerbar button.titlebutton.restore:backdrop:hover,
 .titlebar button.titlebutton.restore:backdrop:hover {
-  background-image: -gtk-scaled(url("titlebuttons/button-restore-backdrop-hover.svg"), url("titlebuttons/button-restore-backdrop-hover@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore-backdrop-hover.svg"), url("titlebuttons/titlebutton-restore-backdrop-hover@2.svg"));
 }
 
 headerbar button.titlebutton.restore:hover,
 .titlebar button.titlebutton.restore:hover {
-  background-image: -gtk-scaled(url("titlebuttons/button-restore-hover.svg"), url("titlebuttons/button-restore-hover@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore-hover.svg"), url("titlebuttons/titlebutton-restore-hover@2.svg"));
 }
 
 headerbar button.titlebutton.restore:active,
 .titlebar button.titlebutton.restore:active {
-  background-image: -gtk-scaled(url("titlebuttons/button-restore-active.svg"), url("titlebuttons/button-restore-active@2.svg"));
+  background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore-active.svg"), url("titlebuttons/titlebutton-restore-active@2.svg"));
 }
