@@ -160,22 +160,27 @@ headerbar windowcontrols button.minimize:active:not(.suggested-action):not(.dest
   background-image: -gtk-scaled(url("titlebuttons-png/titlebutton-minimize-active.png"), url("titlebuttons-png/titlebutton-minimize-active@2.png"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize, .maximized headerbar windowcontrols button.maximize {
+.fullscreen headerbar windowcontrols button.maximize:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons-png/titlebutton-restore.png"), url("titlebuttons-png/titlebutton-restore@2.png"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize:backdrop, .maximized headerbar windowcontrols button.maximize:backdrop {
+.fullscreen headerbar windowcontrols button.maximize:backdrop:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:backdrop:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons-png/titlebutton-restore-backdrop.png"), url("titlebuttons-png/titlebutton-restore-backdrop@2.png"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize:backdrop:hover, .maximized headerbar windowcontrols button.maximize:backdrop:hover {
+.fullscreen headerbar windowcontrols button.maximize:backdrop:hover:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:backdrop:hover:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons-png/titlebutton-restore-backdrop-hover.png"), url("titlebuttons-png/titlebutton-restore-backdrop-hover@2.png"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize:hover, .maximized headerbar windowcontrols button.maximize:hover {
+.fullscreen headerbar windowcontrols button.maximize:hover:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:hover:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons-png/titlebutton-restore-hover.png"), url("titlebuttons-png/titlebutton-restore-hover@2.png"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize:active, .maximized headerbar windowcontrols button.maximize:active {
+.fullscreen headerbar windowcontrols button.maximize:active:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:active:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons-png/titlebutton-restore-active.png"), url("titlebuttons-png/titlebutton-restore-active@2.png"));
 }

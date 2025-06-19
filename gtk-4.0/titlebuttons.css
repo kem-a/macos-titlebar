@@ -159,22 +159,27 @@ headerbar windowcontrols button.minimize:active:not(.suggested-action):not(.dest
   background-image: -gtk-scaled(url("titlebuttons/titlebutton-minimize-active.svg"), url("titlebuttons/titlebutton-minimize-active@2.svg"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize, .maximized headerbar windowcontrols button.maximize {
+.fullscreen headerbar windowcontrols button.maximize:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore.svg"), url("titlebuttons/titlebutton-restore@2.svg"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize:backdrop, .maximized headerbar windowcontrols button.maximize:backdrop {
+.fullscreen headerbar windowcontrols button.maximize:backdrop:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:backdrop:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore-backdrop.svg"), url("titlebuttons/titlebutton-restore-backdrop@2.svg"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize:backdrop:hover, .maximized headerbar windowcontrols button.maximize:backdrop:hover {
+.fullscreen headerbar windowcontrols button.maximize:backdrop:hover:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:backdrop:hover:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore-backdrop-hover.svg"), url("titlebuttons/titlebutton-restore-backdrop-hover@2.svg"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize:hover, .maximized headerbar windowcontrols button.maximize:hover {
+.fullscreen headerbar windowcontrols button.maximize:hover:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:hover:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore-hover.svg"), url("titlebuttons/titlebutton-restore-hover@2.svg"));
 }
 
-.fullscreen headerbar windowcontrols button.maximize:active, .maximized headerbar windowcontrols button.maximize:active {
+.fullscreen headerbar windowcontrols button.maximize:active:not(.suggested-action):not(.destructive-action) > image, 
+.maximized headerbar windowcontrols button.maximize:active:not(.suggested-action):not(.destructive-action) > image {
   background-image: -gtk-scaled(url("titlebuttons/titlebutton-restore-active.svg"), url("titlebuttons/titlebutton-restore-active@2.svg"));
 }
