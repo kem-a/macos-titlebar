@@ -1,6 +1,6 @@
 # macos-titlebar
 
-GTK3 and GTK4 CSS stylesheet that apply MacOS style buttons over current GTK theme without changing it. Tested with `elementary OS` but should work with any Gnome desktop.
+GTK3 and GTK4 CSS stylesheets that apply macOS-style buttons over the current GTK theme without changing it. Tested with elementary OS but should work with any GNOME desktop.
 
 **Night**
 
@@ -28,16 +28,16 @@ To customize the button styles, you can modify the `gtk.css` files located at:
 
 ## Flatpak theming
 
-Run this command to override `xdg-config` and have buttons themed for flatpak apps:
+Run this command to override `xdg-config` and theme buttons for Flatpak apps:
 
 ```sh
 flatpak override --user --filesystem=xdg-config/gtk-3.0:ro
 flatpak override --user --filesystem=xdg-config/gtk-4.0:ro
 ```
 
-To have entire elementary theme for flatpak apps you have to install current theme as flatpak app. To do that use [stylepak](https://github.com/refi64/stylepak) bash script.
+To apply the entire elementary theme to Flatpak apps, you must install the current theme as a Flatpak app. To do that, use the [stylepak](https://github.com/refi64/stylepak) bash script.
 
-There still might be some apps that will ignore it, but majority will work fine. Logout or reboot to apply changes.
+Some apps may still ignore it, but the majority will work fine. Log out or reboot to apply changes.
 
 ## To uninstall
 
@@ -45,7 +45,7 @@ There still might be some apps that will ignore it, but majority will work fine.
 sh uninstall.sh
 ```
 
-To remove flatpak themes:
+To remove Flatpak themes:
 ```bash
 flatpak uninstall <full theme name>
 ```
