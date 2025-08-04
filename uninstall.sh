@@ -15,6 +15,6 @@ for dir in gtk-3.0 gtk-4.0; do
 done
 
 # Reset window controls to default
-gsettings set org.gnome.desktop.wm.preferences button-layout 'close:maximize'
+gsettings reset org.gnome.desktop.wm.preferences button-layout
 
 echo "Uninstallation complete. Please log out and log back in to apply changes."
